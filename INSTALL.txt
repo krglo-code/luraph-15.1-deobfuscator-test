@@ -1,0 +1,19 @@
+Luraph Deobfuscation Suite — Install
+====================================
+
+1. Extract this folder
+2. Linux:   chmod +x setup.sh deob.sh bin/luau && ./setup.sh
+   Windows: put luau.exe into bin\ then run setup.bat
+3. Drop .lua scripts into input/
+4. Run:  python3 deob.py   or   ./deob.sh
+
+Engines shipped:
+  • deobfuscator-luraph-v15/   (caomod2077 / kers — best for v15)
+  • luraph-v15-deob-krypt/     (KryptIT / larpcorrupt)
+  • unluraph.py                (simple fallback)
+  • runtime/envlog.luau        (sandbox)
+  • core/                     (detect + static unpack)
+  • bin/luau*                 (Linux Luau tools)
+
+Need Node.js 18+ for the kers engine.
+Need Python 3.10+.
